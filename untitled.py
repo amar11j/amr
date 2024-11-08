@@ -22,9 +22,9 @@ if(Pilihan=='Laki-Laki'):
         if(18.5<=IMT<=22.9):
             st.success("Anda termasuk dalam golongan tubuh Normal")
         if(23<=IMT<=27.5):
-            st.success("Anda termasuk dalam golongan tubuh Overweight")
+            st.success("Anda termasuk dalam kelebihan berat badan")
         if(IMT>27.5):
-            st.success("Anda termasuk dalam golongan tubuh Obesitas")
+            st.success("Bisa yuk Diet")
         
     st.title('Kebutuhan Kalori Harian')
     hitung2=st.button("Hitung Kalori")
