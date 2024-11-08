@@ -4,7 +4,7 @@ from PIL import Image
 
 
 with st.sidebar:
-    Pilihan= option_menu('Healthy Weagy',['Laki-Laki','Perempuan','Kalori Makanan','Aktivitas','Program'],icons=['gender-male','gender-female','basket2','activity','clipboard2-pulse'],default_index=0)
+    Pilihan= option_menu('Healthy Weagy',['Laki-Laki','Perempuan','Kalori Makanan','Aktivitas','Program','Feedback'],icons=['gender-male','gender-female','basket2','activity','clipboard2-pulse','clipboard2-pulse'],default_index=0)
 
 #Laki-laki                         
 if(Pilihan=='Laki-Laki'):
@@ -240,6 +240,10 @@ if(Pilihan=='Program'):
             st.write(" Rekomendasi lemak yang bisa dikonsumsi untuk surplus kalori adalah selai kacang, keju, ikan salmon, coklat. Berikut adalah kandungan lemak dari bahan makanan tersebut:")
             image = Image.open('6.png')
             st.image(image, caption='Sumber Lemak by Amar Intifada')
+            
+if(Pilihan=='Feedback'):
+    st.success(f"https://forms.gle/HDPMFF9rfATvoEta7")
+    
 
 
     
